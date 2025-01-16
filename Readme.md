@@ -38,8 +38,13 @@ The main.c file contains a hardcoded filepath for your assembly and a single har
 
 ## Related Works and Resources
 [HostingCLR](https://github.com/etormadiv/HostingCLR) - Original implementation of CLR hosting
+
 [InlineExecute-Assembly](https://github.com/anthemtotheego/InlineExecute-Assembly) - Original implementation of executing .NET assemblies as a BOF
+
 [Dealing with Failure: Failure Escalation Policy in CLR Hosts](https://posts.specterops.io/dealing-with-failure-failure-escalation-policy-in-clr-hosts-54ca8b728faa) – This is the only real example I could find of offensive tradecraft using CLR Customizations when I was initially doing this research.
+
 [Hosted Pumpkin](https://github.com/ldematte/HostedPumpkin) – A GitHub repository containing a proof-of-concept for implementing several CLR Customizations.
+
 [Shellcode: Loading .NET Assemblies From Memory](https://modexp.wordpress.com/2019/05/10/dotnet-loader-shellcode/) – Donut was a great deal of help in wrangling all of the relevant data structures and definitions in C.
+
 Customizing the Microsoft .NET Framework Common Language Runtime by Steven Pratschner – This is the definitive text on CLR Customizations. Simply a must-read if you have any interest in this area.
