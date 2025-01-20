@@ -58,6 +58,10 @@ HRESULT HostMalloc_DebugAlloc(HostMalloc* This, SIZE_T cbSize, EMemoryCriticalLe
 }
 
 HRESULT HostMalloc_Free(HostMalloc* This, void* pMem) {
+	if (!HeapValidate(This->hHeap, 0, pMem)) {
+		printf("[!] Detected corrupted heap at 0x%p\n", pMem);
+		return E_OUTOFMEMORY;
+	}
 	HeapFree(This->hHeap, 0, pMem);
 	return S_OK;
 }
